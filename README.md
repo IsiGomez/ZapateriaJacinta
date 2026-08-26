@@ -7,11 +7,11 @@ Este proyecto consiste en el desarrollo del sistema frontend de registro e inter
 ## Paleta de Colores
 La identidad visual de la tienda utiliza tonos tierra sobrios y elegantes:
 
-|       Nombre      |                      Muestra                        |
-| :---:             | :---:                                               |
-| **Beige / Arena** | ![](https://img.shields.io/badge/-%23E3CDB2-E3CDB2) |
-| **Marrón / Café** | ![](https://img.shields.io/badge/-%238E614A-8E614A) |
-
+|       Nombre         |                          Muestra                       |
+| :---:                | :---:                                                  |
+| **Beige / Arena**    | ![](https://img.shields.io/badge/-%23E3CDB2) #E3CDB2 |
+| **Marrón / Café**    | ![](https://img.shields.io/badge/-%238E614A) #8E614A |
+| **Marrón Chocolate:**| ![](https://img.shields.io/badge/-%236E4A39) #6e4a39 |
 
 ## Estructura del sitio:
 - `inicio.html` — Página principal.
