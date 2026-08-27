@@ -1,0 +1,46 @@
+body{
+    font-family: Verdana;
+    font-weight: bold;
+    color: #6e4a39;
+    background-color: #e3cdb2;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav{
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.btn {
+  list-style: none;
+}
+
+.btn a {
+  display: flex;
+  align-items: center;
+  width: 50px;                 
+  height: 50px;                
+  overflow: hidden;            
+  transition: width 0.3s ease; 
+  text-decoration: none;     
+  color: inherit;             
+}
+
+
+.btn a:hover {
+  width: 120px;                
+}
+
+
+.img-btn {
+  flex-shrink: 0;
+}
+
+.text-btn {
+  margin-left: 10px;          
+  white-space: nowrap;        
+}
