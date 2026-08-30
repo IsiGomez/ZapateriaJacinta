@@ -3,26 +3,107 @@
     <head>
         <meta charset="UTF-8">
         <title>Iniciar Sesión-Jacinta</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <header>
             <nav>
                 <ul>
-                    <li id="btn-home" class="btn">
-                        <a href="./">
-                            <img id="img-home" class="img-btn" src="img/house.svg" height="50" width="50">
-                            <span id="text-home" class="text-btn">Inicio</span>
+                    <li class="btn">
+                        <a href="inicio.html">
+                            <img class="img-btn" src="multimedia/img/house.svg" height="50" width="50">
+                            <span class="text-btn">Inicio</span>
+                        </a>
+                    </li>
+                    <li class="btn">
+                        <a href="productos.html">
+                            <img class="img-btn" src="multimedia/img/store.svg" height="50" width="50">
+                            <span class="text-btn">Productos</span>
+                        </a>
+                    </li>
+                    <li class="btn">
+                        <a href="login.html">
+                            <img class="img-btn" src="multimedia/img/circle-user.svg" height="50" width="50">
+                            <span class="text-btn">Iniciar Sesión</span>
                         </a>
                     </li>
                 </ul>
             </nav>
         </header>
         <main>
+            <section class="cont-form">
+                <article id="secc-login" class="secc-form">
+                <h2>Iniciar Sesión</h2>
+                    <form id="log-form" novalidate>
+                        <div class="grupo-form">
+                            <label for="log-email">Correo electrónico:</label>
+                            <input type="email" id="log-email" name="email" placeholder="ejemplo@correo.com" autocomplete="email">
+                            <span class="error-msg" id="error-log-email"></span>
+                        </div>
+        
+                        <div class="grupo-form">
+                            <label for="log-pass">Contraseña:</label>
+                            <input type="password" id="log-pass" name="password" placeholder="••••••••" autocomplete="current-password">
+                            <span class="error-msg" id="error-log-pass"></span>
+                        </div>
+        
+                        <button type="submit" class="submit-btn">Ingresar</button>
+        
+                        <p class="texto-registro">
+                            ¿Todavía no tienes una cuenta?
+                            <a href="#" id="link-registro">Registrarme</a>
+                        </p>
+        
+                        <p class="success-msg" id="login-exito"></p>
+                    </form>
+                </article>
+                <article id="secc-registro" class="secc-form oculto">
+                    <h2>Registrarse</h2>
+                    <form id="reg-form" novalidate>
+                        <div class="grupo-form">
+                            <label for="reg-nombre">Nombre Completo:</label>
+                            <input type="text" id="reg-nombre" name="nombre" placeholder="Ingrese su nombre aqui" autocomplete="name">
+                            <span class="error-msg" id="error-reg-nombre"></span>
+                        </div>
 
+                        <div class="grupo-form">
+                            <label for="reg-email">Correo electrónico:</label>
+                            <input type="email" id="reg-email" name="email" placeholder="ejemplo@correo.com" autocomplete="email">
+                            <span class="error-msg" id="error-reg-email"></span>
+                        </div>
+
+                        <div class="grupo-form">
+                            <label for="reg-pass">Contraseña (mínimo 6 caracteres):</label>
+                            <input type="password" id="reg-pass" name="password" placeholder="••••••••" autocomplete="new-password">
+                            <span class="error-msg" id="error-reg-pass"></span>
+                        </div>
+
+                        <div class="grupo-form">
+                            <label for="reg-pass-confirm">Confirmar contraseña:</label>
+                            <input type="password" id="reg-pass-confirm" name="password_confirm" placeholder="••••••••" autocomplete="new-password">
+                            <span class="error-msg" id="error-reg-pass-confirm"></span>
+                        </div>
+
+                        <button type="submit" class="confirmar-btn">Registrarse</button>
+
+                        <p class="texto-registro">
+                            ¿Ya tienes una cuenta?
+                            <a href="#" id="link-login">Iniciar Sesión</a>
+                        </p>
+
+                        <p class="exito-msg" id="registro-exito"></p>
+                        </form>
+                </article>
+
+            </section>
         </main>
         <footer>
-
+            <h4>Siguenos en nuestras redes sociales:</h4>
+            <a href="https://www.instagram.com/jacintashoes.ok/">Instagram</a>
+            <a href="https://www.facebook.com/Jacinta.zapatoss/">Facebook</a>
         </footer>
+
+        <script src="login.js"></script>
     </body>
 </html>

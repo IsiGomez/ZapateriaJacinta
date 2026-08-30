@@ -1,46 +1,147 @@
-body{
-    font-family: Verdana;
+body {
+  font-family: Verdana, sans-serif;
+  font-weight: bold;
+  color: #6e4a39;
+  background-color: #e3cdb2;
+  margin: 20px;
+  align-items: center;
+}
+
+a {
+    color: #8E614A;
     font-weight: bold;
-    color: #6e4a39;
-    background-color: #e3cdb2;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 15px;
+  display: table; 
+  margin: 0 auto;       
 }
 
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-nav{
-    background-color: rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-}
-.btn {
-  list-style: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
 }
 
 .btn a {
   display: flex;
   align-items: center;
-  width: 50px;                 
-  height: 50px;                
-  overflow: hidden;            
-  transition: width 0.3s ease; 
-  text-decoration: none;     
-  color: inherit;             
+  height: 50px;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 8px;
+  padding-right: 15px;
+  transition: background-color 0.2s ease, transform 0.1s ease;
 }
-
 
 .btn a:hover {
-  width: 120px;                
+  background-color: rgba(255, 255, 255, 0.15);
 }
 
+.btn a:active {
+  background-color: rgba(110, 74, 57, 0.3);
+  transform: scale(0.97);
+}
 
 .img-btn {
   flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  display: block;
 }
 
 .text-btn {
-  margin-left: 10px;          
-  white-space: nowrap;        
+  margin-left: 10px;
+  white-space: nowrap;
+}
+
+.secc-form {
+  background-color: rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  margin-top: 30px;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+}
+
+section {
+  background-color: rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  display: table; 
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.oculto {
+    display: none !important;
+}
+
+video {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; /* Opcional: para que los bordes redondeados hagan juego con tu diseño */
+  display: block;
+  margin: 0 auto;     /* Centra el video si es más pequeño que el contenedor */
+}
+
+@media (max-width: 600px) {
+  body {
+    margin: 10px;
+  }
+  
+  nav {
+    display: table;
+    margin: 0 auto;
+    padding: 15px;         /* 15px exactos en todos los bordes del nav */
+    width: auto;
+    max-width: 90%;
+  }
+  
+  ul {
+    flex-direction: column;
+    align-items: stretch;  /* Mantiene los botones alineados al borde interior */
+    gap: 8px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .btn a {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px 10px;     /* Ajuste interno del botón */
+    height: auto;
+    display: flex;
+    align-items: center;
+  }
+
+  .img-btn {
+    width: 32px;
+    height: 32px;
+    margin-left: 0;        /* Se posiciona exactamente a 15px por el padding del nav */
+  }
+
+  .text-btn {
+    font-size: 14px;
+    margin-left: 10px;
+  }
 }
