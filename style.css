@@ -97,9 +97,9 @@ section {
 video {
   max-width: 100%;
   height: auto;
-  border-radius: 8px; /* Opcional: para que los bordes redondeados hagan juego con tu diseño */
+  border-radius: 8px;
   display: block;
-  margin: 0 auto;     /* Centra el video si es más pequeño que el contenedor */
+  margin: 0 auto;
 }
 
 @media (max-width: 600px) {
