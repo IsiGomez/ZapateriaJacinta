@@ -4,14 +4,23 @@ body {
   color: #6e4a39;
   background-color: #e3cdb2;
   margin: 20px;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+button {
+  font: inherit;
+}
+
+input {
+  font: inherit;
 }
 
 a {
-    color: #8E614A;
-    font-weight: bold;
-    cursor: pointer;
-    text-decoration: underline;
+  color: #8E614A;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 nav {
@@ -90,8 +99,18 @@ section {
   transform: translateX(-50%);
 }
 
+section input{
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 8px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
 .oculto {
-    display: none !important;
+  display: none !important;
 }
 
 video {
@@ -102,6 +121,19 @@ video {
   margin: 0 auto;
 }
 
+.submit-btn {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color:  #6e4a39;
+  color: floralwhite;
+  font-size: 15px;
+  margin-top: 16px;
+}
+
+
 @media (max-width: 600px) {
   body {
     margin: 10px;
@@ -110,14 +142,14 @@ video {
   nav {
     display: table;
     margin: 0 auto;
-    padding: 15px;         /* 15px exactos en todos los bordes del nav */
+    padding: 15px;         
     width: auto;
     max-width: 90%;
   }
   
   ul {
     flex-direction: column;
-    align-items: stretch;  /* Mantiene los botones alineados al borde interior */
+    align-items: stretch;  
     gap: 8px;
   }
 
@@ -128,7 +160,7 @@ video {
   .btn a {
     width: 100%;
     box-sizing: border-box;
-    padding: 8px 10px;     /* Ajuste interno del botón */
+    padding: 8px 10px;     
     height: auto;
     display: flex;
     align-items: center;
@@ -137,11 +169,21 @@ video {
   .img-btn {
     width: 32px;
     height: 32px;
-    margin-left: 0;        /* Se posiciona exactamente a 15px por el padding del nav */
+    margin-left: 0;        
   }
 
   .text-btn {
     font-size: 14px;
     margin-left: 10px;
+  }
+
+  section,
+  .secc-form {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    transform: none;
+    box-sizing: border-box;
   }
 }
