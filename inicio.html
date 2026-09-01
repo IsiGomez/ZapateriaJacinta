@@ -3,40 +3,92 @@
 <html lang="es">
     <head>
         <meta charset="utf-8">
-        <title>jacinta</title>
+        <title>Jacinta</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="inicio.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="style.css">
     </head>
     
     <body>
-        <header>
-            <h1>Zapateria Jacinta - La comodidad de caminar</h1>
+        <header class="hero">
+            <nav class="navbar navbar-expand-md navbar-dark">
+                <div class="container-fluid justify-content-center">
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" 
+                            aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menú">
+                        <div class="navbar-brand">Menú</div>
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navMenu">
+                        <ul class="navbar-nav text-center">
+                            <li class="nav-item">
+                                <span class="nav-link pag-actual">Inicio</span>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="productos.html">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="login.html">Iniciar sesión</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <section class="hero-content">
+                <h1>Zapateria Jacinta</h1>
+                <p class="tagline">La comodidad de caminar</p>
+            </section>
         </header>
 
-        <nav class="links">
-            <ul>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-            </ul>
-        </nav>
 
-        <section id="descripcion-tienda">
-            <p>
-                Nuestra tienda fue fundada en 1980 por Jacinta Pérez Gutierrez, desde entonces nos hemos dedicado a ofrecer los mejores productos de zapateria, 
-                para que cada uno de nuestros clientes sienta la verdadera comodidad de caminar.
-            </p>
-        </section>
+        <main>
+            <section id="descripcion-tienda">
+                <h2>Nuestra Historia</h2>
+                <p>
+                    En Zapatería Jacinta, la tradición y el confort caminan juntos desde 1980. Fundada por Jacinta Pérez Gutiérrez, 
+                    nuestra tienda nació con la promesa de ofrecer calzado de excelente calidad, pensado para que disfrutes de la verdadera comodidad en cada paso. 
+                    Hoy seguimos seleccionando cada diseño con la misma pasión de siempre para acompañarte a donde vayas.
+                </p>
+            </section>
 
-        <video controls>
-            <source src="multimedia/videoIntro.mp4" type="video/mp4">
-            Video muestra de nuestros zapatos
-        </video>
+            <section id="video-intro">
+                <h2>Proceso de producción</h2>
+                <video controls aria-label="Video muestra del proceso de creación de zapatos">
+                    <source src="multimedia/videoIntro.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de este video.
+                </video>
+            </section>
+        </main>
 
         <footer>
-            <h4>Siguenos en nuestras redes sociales:</h4>
-            <a href="https://www.instagram.com/jacintashoes.ok/">Instagram</a>
-            <a href="https://www.facebook.com/Jacinta.zapatoss/">Facebook</a>
+            <div class="container">
+                <div class="row text-center text-sm-center">
+                    <div id="footer-tienda" class="col-12 col-sm-6 mb-4">
+                        <h5>Zapatería Jacinta</h5>
+                        <p>La comodidad de caminar, desde 1980.</p>
+                    </div>
+
+                    <div class="col-12 col-sm-6 mb-4">
+                        <h5>Síguenos</h5>
+                        <a href="https://www.instagram.com/jacintashoes.ok/" target="_blank" rel="noopener noreferrer" class="footer-icon" aria-label="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/Jacinta.zapatoss/" target="_blank" rel="noopener noreferrer" class="footer-icon" aria-label="Facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <hr>
+
+                <p class="text-center mb-0">&copy; <span id="anioActual"></span> Zapatería Jacinta. Todos los derechos reservados.</p>
+            </div>
         </footer>
         
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+        <script src="annio.js"></script>
     </body>
 </html>
