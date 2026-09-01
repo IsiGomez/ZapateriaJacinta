@@ -5,44 +5,73 @@
         <meta charset="utf-8">
         <title>Productos-Jacinta</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
         <link rel="stylesheet" href="style.css">
     </head>
     
     <body>
-        <header>
-            <nav>
-                <ul>
-                    <li class="btn">
-                        <a href="inicio.html">
-                            <img class="img-btn" src="multimedia/img/house.svg" height="50" width="50">
-                            <span class="text-btn">Inicio</span>
-                        </a>
-                    </li>
-                    <li class="btn">
-                        <a href="productos.html">
-                            <img class="img-btn" src="multimedia/img/store.svg" height="50" width="50">
-                            <span class="text-btn">Productos</span>
-                        </a>
-                    </li>
-                    <li class="btn">
-                        <a href="login.html">
-                            <img class="img-btn" src="multimedia/img/circle-user.svg" height="50" width="50">
-                            <span class="text-btn">Iniciar Sesión</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+        <header class="hero">
 
+            <nav class="navbar navbar-expand-md navbar-dark">
+                <div class="container-fluid justify-content-center">
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" 
+                            aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menú">
+                        <div class="navbar-brand">Menú</div>
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navMenu">
+                        <ul class="navbar-nav text-center">
+                            <li class="nav-item">
+                                <a class="nav-link" href="inicio.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <span class="nav-link pag-actual">Productos</span>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="login.html">Iniciar sesión</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="hero-content">
+                <h1>Productos</h1>
+            </div>
+        </header>
 
         <main>
         </main>
 
         <footer>
-            <h4>Siguenos en nuestras redes sociales:</h4>
-            <a href="https://www.instagram.com/jacintashoes.ok/">Instagram</a>
-            <a href="https://www.facebook.com/Jacinta.zapatoss/">Facebook</a>
+            <div class="container">
+                <div class="row text-center text-sm-center">
+                    <div id="footer-tienda" class="col-12 col-sm-6 mb-4">
+                        <h5>Zapatería Jacinta</h5>
+                        <p>La comodidad de caminar, desde 1980.</p>
+                    </div>
+
+                    <div class="col-12 col-sm-6 mb-4">
+                        <h5>Síguenos</h5>
+                        <a href="https://www.instagram.com/jacintashoes.ok/" target="_blank" rel="noopener noreferrer" class="footer-icon" aria-label="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/Jacinta.zapatoss/" target="_blank" rel="noopener noreferrer" class="footer-icon" aria-label="Facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <hr>
+
+                <p class="text-center mb-0">&copy; <span id="anioActual"></span> Zapatería Jacinta. Todos los derechos reservados.</p>
+            </div>
         </footer>
-        
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+        <script src="annio.js"></script>        
     </body>
 </html>
