@@ -154,17 +154,6 @@ a {
   body {
     margin: 10px;
   }
-  
-
-  section,
-  .secc-form {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    margin-left: 0;
-    transform: none;
-    box-sizing: border-box;
-  }
 }
 
 footer {
@@ -202,15 +191,15 @@ footer .footer-icon {
   margin-right: 15px;
 }
 
+.categoria-productos { 
+  margin-bottom: 50px; 
+}
+
 .categoria-productos h2 {
   margin-bottom: 20px;
   margin-top: 20px;
   text-align: center;
   font-weight: bold;
-}
-
-.categoria-productos { 
-  margin-bottom: 50px; 
 }
 
 .categoria-productos .carousel {

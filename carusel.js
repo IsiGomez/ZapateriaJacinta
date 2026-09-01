@@ -6,7 +6,7 @@ document.querySelectorAll('.carousel').forEach(carrusel => {
         items.forEach((item, indice) => {
             const boton = document.createElement('button');
             boton.type = 'button';
-            boton.setAttribute('data-bs-target', '#${carrusel.id}');
+            boton.setAttribute('data-bs-target', `#${carrusel.id}`);
             boton.setAttribute('data-bs-slide-to', indice);
             if (indice === 0) {
                 boton.classList.add('active');
